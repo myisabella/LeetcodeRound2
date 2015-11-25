@@ -3,6 +3,8 @@ package algorithm.bitmanipulation;
 /**
  * Given an array of size n, find the majority element. The majority element is the element that happens more than
  * [ n/2 ] times. You may assume that the array is non-empty and the majority element always exists in the array.
+ *
+ * Completed: 11/20/15
  */
 public class MajorityElement {
   public int majorityElement(int[] nums) {
