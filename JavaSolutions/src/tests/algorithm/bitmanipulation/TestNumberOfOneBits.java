@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
  * Unit test for number of one bits
  * 1. 0 => 0
  * 2. 1 => 1
- * 3. 1011 => 3
+ * 3. (1011)b => 3
+ * 4. Max integer => 31
  */
 public class TestNumberOfOneBits {
 
