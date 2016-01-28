@@ -3,7 +3,6 @@ package algorithm.tree;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
 public class TestSameTree {
   private static TreeNode leafNode = new TreeNode(0);
   private static TreeNode node1 = new TreeNode(1);
