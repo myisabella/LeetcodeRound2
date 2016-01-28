@@ -14,7 +14,7 @@ package algorithm.tree;
  *     TreeNode(int x) { val = x; }
  * }
  *
- * Completed: 01/20/2015
+ * Completed: 01/20/2016
  */
 
 public class SameTree {
