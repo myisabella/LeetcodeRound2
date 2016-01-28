@@ -12,6 +12,7 @@ public class TestBalancedBinaryTree {
   private static TreeNode leafNode = new TreeNode(0);
   private static TreeNode balancedRoot = new TreeNode(4);
   private static TreeNode unbalancedRoot = new TreeNode(4);
+  private static TreeNode p = new TreeNode(2);
 
   @BeforeTest
   public void setup() {
@@ -23,6 +24,15 @@ public class TestBalancedBinaryTree {
     unbalancedRoot.left = new TreeNode(5);
     unbalancedRoot.left.left = new TreeNode(2);
     unbalancedRoot.left.right = new TreeNode(7);
+
+    p.left = new TreeNode(7);
+    p.left.left = new TreeNode(2);
+    p.left.right = new TreeNode(6);
+    p.left.right.left = new TreeNode(5);
+    p.left.right.right = new TreeNode(11);
+    p.right = new TreeNode(5);
+    p.right.right = new TreeNode(9);
+    p.right.right.left = new TreeNode(4);
   }
 
   @Test
@@ -43,5 +53,10 @@ public class TestBalancedBinaryTree {
   @Test
   public void testUnbalancedTree() {
     Assert.assertFalse(BalancedBinaryTree.isBalanced(unbalancedRoot));
+  }
+
+  @Test
+  public void testUnbalancedTree2() {
+    Assert.assertFalse(BalancedBinaryTree.isBalanced(p));
   }
 }
