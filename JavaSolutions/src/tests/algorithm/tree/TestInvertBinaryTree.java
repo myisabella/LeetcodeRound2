@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
 public class TestInvertBinaryTree {
   private static TreeNode leaf = new TreeNode(1);
   private static TreeNode tree = new TreeNode(4);

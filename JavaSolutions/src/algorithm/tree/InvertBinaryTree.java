@@ -3,7 +3,6 @@ package algorithm.tree;
 import java.util.Deque;
 import java.util.LinkedList;
 
-
 /**
  * Invert a binary tree. For example, binary tree
  *      4

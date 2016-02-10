@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
 public class TestSymmetricTree {
   private static TreeNode leaf = new TreeNode(3);
   private static TreeNode root = new TreeNode(1);
