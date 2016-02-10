@@ -3,7 +3,6 @@ package algorithm.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 /**
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
  *
