@@ -37,26 +37,31 @@ public class TestBalancedBinaryTree {
 
   @Test
   public void testNullTree() {
-    Assert.assertTrue(BalancedBinaryTree.isBalanced(null));
+    Assert.assertTrue(BalancedBinaryTree.isBalancedTopDown(null));
+    Assert.assertTrue(BalancedBinaryTree.isBalancedBottomUp(null));
   }
 
   @Test
   public void testLeafNode() {
-    Assert.assertTrue(BalancedBinaryTree.isBalanced(leafNode));
+    Assert.assertTrue(BalancedBinaryTree.isBalancedTopDown(leafNode));
+    Assert.assertTrue(BalancedBinaryTree.isBalancedBottomUp(leafNode));
   }
 
   @Test
   public void testBalancedTree() {
-    Assert.assertTrue(BalancedBinaryTree.isBalanced(balancedRoot));
+    Assert.assertTrue(BalancedBinaryTree.isBalancedTopDown(balancedRoot));
+    Assert.assertTrue(BalancedBinaryTree.isBalancedBottomUp(balancedRoot));
   }
 
   @Test
   public void testUnbalancedTree() {
-    Assert.assertFalse(BalancedBinaryTree.isBalanced(unbalancedRoot));
+    Assert.assertFalse(BalancedBinaryTree.isBalancedTopDown(unbalancedRoot));
+    Assert.assertFalse(BalancedBinaryTree.isBalancedBottomUp(unbalancedRoot));
   }
 
   @Test
   public void testUnbalancedTree2() {
-    Assert.assertFalse(BalancedBinaryTree.isBalanced(p));
+    Assert.assertFalse(BalancedBinaryTree.isBalancedTopDown(p));
+    Assert.assertFalse(BalancedBinaryTree.isBalancedBottomUp(p));
   }
 }
