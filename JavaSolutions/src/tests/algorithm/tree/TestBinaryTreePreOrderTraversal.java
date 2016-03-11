@@ -52,6 +52,8 @@ public class TestBinaryTreePreOrderTraversal {
   public void testLeafCase() {
     Assert.assertEquals(BinaryTreePreOrderTraversal.preorderTraversalRecursively(leaf), resultLeaf);
     Assert.assertEquals(BinaryTreePreOrderTraversal.preorderTraversalIteratively(leaf), resultLeaf);
+
+    Assert.assertEquals(BinaryTreePreOrderTraversal.preorderTraversal(leaf), resultLeaf);
   }
 
   @Test

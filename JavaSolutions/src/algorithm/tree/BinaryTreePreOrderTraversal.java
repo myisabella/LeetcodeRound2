@@ -60,4 +60,24 @@ public class BinaryTreePreOrderTraversal {
 
     return list;
   }
+
+  public static List<Integer> preorderTraversal(TreeNode root) {
+    List<Integer> list = new ArrayList<>();
+    Stack<TreeNode> stack = new Stack<>();
+    TreeNode p = root;
+
+    while (!stack.isEmpty() || p != null) {
+      if (p != null) {
+        list.add(p.val);
+        if (p.right != null) {
+          stack.push(p.right);
+        }
+        p = p.left;
+      } else {
+        p = stack.pop();
+      }
+    }
+
+    return list;
+  }
 }
