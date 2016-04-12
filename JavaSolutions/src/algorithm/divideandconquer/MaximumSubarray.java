@@ -26,6 +26,7 @@ public class MaximumSubarray {
     return maxSoFar;
   }
 
+  // Time complexity: O(NlogN)
   public static int maxSubArrayDAC(int[] nums) {
     if (nums.length == 0) {
       return 0;
