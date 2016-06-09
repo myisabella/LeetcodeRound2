@@ -27,5 +27,6 @@ public class TestRemoveDuplicatesFromSortedArray {
   @Test
   public void testNormalCases() {
     Assert.assertEquals(RemoveDuplicatesFromSortedArray.removeDuplicatesTwice(array1), 5);
+//    Assert.assertEquals(RemoveDuplicatesFromSortedArray.removeDuplicatesTwiceII(array1), 5);
   }
 }

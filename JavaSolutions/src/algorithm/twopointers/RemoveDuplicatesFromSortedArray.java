@@ -46,4 +46,24 @@ public class RemoveDuplicatesFromSortedArray {
 
     return index;
   }
+
+  // this solution is using the same idea as before but can avoid out of range warning
+  public static int removeDuplicatesTwiceII(int[] nums) {
+    if (nums == null) {
+      return 0;
+    }
+
+    if (nums.length <= 2) {
+      return nums.length;
+    }
+
+    int index = 2;
+    for (int i = 2; i < nums.length; i++) {
+      if (nums[index - 2] < nums[i]) {
+        nums[index++] = nums[i];
+      }
+    }
+
+    return index;
+  }
 }
